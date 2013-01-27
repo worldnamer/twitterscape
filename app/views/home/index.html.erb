@@ -5,7 +5,7 @@
   	<div class="twitter_handle"><%= pile.name %></div>
   	<ul class="tweets_list">
       <% pile.tweets.each do |tweet| %>
-      <li class='<%= tweet_age(tweet) %>'><%= tweet.created_at.strftime("%H:%M") %> <%= show_tweet(tweet).html_safe %></li>
+      <li class='<%= tweet.age %>'><%= tweet.full_text.html_safe %></li>
       <% end %>
     </ul>
   </div>

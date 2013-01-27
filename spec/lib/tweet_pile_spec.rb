@@ -22,6 +22,12 @@ describe TweetPile do
       pile.name.should == "worldnamer"
       pile.tweets.should == [t]
     end
+
+    it 'wraps the tweets in TweetWrapper instances' do
+      t = tweet
+      pile = TweetPile.new(:worldnamer, [t])
+      pile.tweets.first.class.should == TweetWrapper
+    end
   end
 
   context 'an array of several piles' do
