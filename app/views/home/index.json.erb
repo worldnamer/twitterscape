@@ -1,0 +1,8 @@
+{"piles": <%= 
+  @piles.map do |pile|
+    {
+      name: pile.name,
+      tweets: pile.tweets.map { |tweet| {age: tweet.age, full_text: tweet.full_text} }
+    }
+  end.to_json.html_safe
+%>}

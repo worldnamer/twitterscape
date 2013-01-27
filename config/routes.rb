@@ -1,6 +1,8 @@
 Twitterscape::Application.routes.draw do
   resources :twitter_credentials
 
+  match 'home/index(.:format)'
+
   root to: "home#index"
 
 
