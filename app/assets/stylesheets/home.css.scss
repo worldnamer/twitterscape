@@ -1,12 +1,24 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 100%;
+}
+
+#home {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 80%;
+}
 
 .tweet_pile {
 	width: 300px;
 	height: 200px;
-	display: block;
-	float: left;
+	display: inline-block;
 	overflow: scroll;
 	margin: 10px;
 	box-shadow: rgb(0, 0, 0) 0px 0px 5px 0px;
@@ -14,13 +26,9 @@
 
 .tweets_list {
 	list-style-type: none;
-	padding: 0px;
 	margin: 0px;
 	padding-left: 5px;
-	padding-right: 5px;
 	margin-left: 5px;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	width: 270px;
 }
 
 .tweets_list li {
@@ -31,26 +39,16 @@
 .twitter_handle {
 	border-bottom: 1px solid gray;
 	width: 100%;
-	display: inline-block;
 	margin-left: 5px;
 	font-weight: bold;
 }
 
-li.current {
+li.current, li.current a {
 	color: black;	
 }
-li.current a {
-	color: black;
-}
-li.old {
+li.old, li.old a {
 	color: #888;	
 }
-li.old a {
-	color: #888;
-}
-li.older {
+li.older, li.older a {
 	color: #ccc;	
-}
-li.older a {
-	color: #ccc;
 }
