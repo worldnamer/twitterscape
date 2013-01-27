@@ -1,0 +1,13 @@
+<h1 style="text-align:center">@worldnamer</h1>
+<div id="worldnamer_home" style="margin-left: auto; margin-right: auto; width: 80%;">
+  <% @piles.each do |pile| %>
+  <div id="<%= pile.name %>" class="tweet_pile">
+  	<span class="twitter_handle"><%= pile.name %></span>
+  	<ul class="tweets_list">
+      <% pile.tweets.each do |tweet| %>
+      <li class='<%= tweet_age(tweet) %>'><%= tweet.created_at.strftime("%H:%M") %> <%= show_tweet(tweet).html_safe %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+</div>
