@@ -24,7 +24,7 @@ h1 {
 	box-shadow: rgb(0, 0, 0) 0px 0px 5px 0px;
 }
 
-.tweets_list {
+.tweet_pile ul {
 	list-style-type: none;
 	margin: 0px;
 	padding-left: 5px;
@@ -32,7 +32,7 @@ h1 {
 	width: 270px;
 }
 
-.tweets_list li {
+.tweet_pile ul li {
 	border-bottom: 1px solid #CCC;
 	font-size: 11px;
 }

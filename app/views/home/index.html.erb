@@ -1,9 +1,9 @@
-<h1>@worldnamer</h1>
+<h1>@worldnamer: refreshed <%= Time.now.strftime("%H:%M") %></h1>
 <div id="home">
   <% @piles.each do |pile| %>
   <div id="<%= pile.name %>" class="tweet_pile">
   	<div class="twitter_handle"><%= pile.name %></div>
-  	<ul class="tweets_list">
+  	<ul>
       <% pile.tweets.each do |tweet| %>
       <li class='<%= tweet.age %>'><%= tweet.full_text.html_safe %></li>
       <% end %>
