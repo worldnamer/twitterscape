@@ -1,5 +1,5 @@
 language: ruby
 bundler_args: --without development
 rvm: 1.9.3
-before_script: RAILS_ENV=travis rake db:migrate db:seed 
+before_script: RAILS_ENV=travis rake db:create db:migrate db:seed 
 script: RAILS_ENV=travis bundle exec rspec spec
