@@ -10,5 +10,10 @@ $(() ->
   tweet_piles.mouseout(() ->
     $(this).stop().animate({boxShadow: '0 0 5px 0px #000'})
   )
-  tweet_piles.sbscroller(autohide: true);
+  tweets = $(".tweets")
+  tweets.sbscroller(autohide: true);
+  tweets.each(() -> 
+    $(this).scrollTop(this.scrollHeight)
+    $(this).sbscroller('refresh')
+  )
 )

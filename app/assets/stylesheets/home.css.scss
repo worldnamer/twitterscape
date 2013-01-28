@@ -19,12 +19,17 @@ h1 {
 	width: 300px;
 	height: 200px;
 	display: inline-block;
-	overflow: scroll;
 	margin: 10px;
 	box-shadow: rgb(0, 0, 0) 0px 0px 5px 0px;
 }
 
-.tweet_pile ul {
+.tweets {
+	height: 184px;
+	overflow: scroll;
+  width: 100%;
+}
+
+.tweets ul {
 	list-style-type: none;
 	margin: 0px;
 	padding-left: 5px;
@@ -32,16 +37,18 @@ h1 {
 	width: 270px;
 }
 
-.tweet_pile ul li {
+.tweets ul li {
 	border-bottom: 1px solid #CCC;
 	font-size: 11px;
 }
 
 .twitter_handle {
 	border-bottom: 1px solid gray;
-	width: 100%;
+	width: 95%;
 	margin-left: 5px;
 	font-weight: bold;
+	overflow:hidden; 
+	height: 15px;
 }
 
 li.current, li.current a {

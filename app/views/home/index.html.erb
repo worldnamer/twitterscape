@@ -3,11 +3,13 @@
   <% @piles.each do |pile| %>
   <div id="<%= pile.name %>" class="tweet_pile">
   	<div class="twitter_handle"><%= pile.name %></div>
-  	<ul>
-      <% pile.tweets.each do |tweet| %>
-      <li class='<%= tweet.age %>'><%= tweet.full_text.html_safe %></li>
-      <% end %>
-    </ul>
+    <div class="tweets">
+    	<ul>
+        <% pile.tweets.each do |tweet| %>
+        <li class='<%= tweet.age %>'><%= tweet.full_text.html_safe %></li>
+        <% end %>
+      </ul>
+    </div>
   </div>
   <% end %>
 </div>

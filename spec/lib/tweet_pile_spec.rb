@@ -28,6 +28,13 @@ describe TweetPile do
       pile = TweetPile.new(:worldnamer, [t])
       pile.tweets.first.class.should == TweetWrapper
     end
+
+    it 'sorts the tweets oldest first' do
+      t1 = tweet(Time.now - 1)
+      t2 = tweet(Time.now)
+      pile = TweetPile.new(:worldnamer, [t2, t1])
+      pile.tweets.first.should == t1
+    end
   end
 
   context 'an array of several piles' do
