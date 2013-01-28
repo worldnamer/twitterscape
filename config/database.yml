@@ -3,6 +3,7 @@ development:
   encoding: unicode
   database: twitterscape_dev
   pool: 5
+  timeout: 5000
   username: worldnamer
   password:
 
@@ -14,5 +15,13 @@ test:
   encoding: unicode
   database: twitterscape_test
   pool: 5
+  timeout: 5000
   username: worldnamer
   password:
+
+# Travis CI Database Configuration
+travis:
+  adapter: postgresql
+  username: postgres
+  password:
+  database: twitterscape_test
