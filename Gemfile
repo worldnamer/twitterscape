@@ -24,7 +24,7 @@ group :development do
 end
 
 # Gems for testing
-group :test do
+group :test, :travis do
   gem 'rspec-rails'
   gem 'vcr'
   gem 'webmock'

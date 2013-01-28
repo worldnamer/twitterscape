@@ -143,7 +143,6 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.11)
-  rake
   rspec-rails
   sass-rails (~> 3.2.3)
   twitter
